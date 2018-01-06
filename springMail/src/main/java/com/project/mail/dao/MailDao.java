@@ -4,6 +4,6 @@ import com.project.mail.model.Mailer;
 
 public interface MailDao {
 
-	public int sentEmail(Mailer m);
+	public boolean sentEmail(Mailer m);
 	
 }

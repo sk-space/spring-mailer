@@ -18,11 +18,11 @@ public class Mailer {
 	private int id;
 	@Column
 	private String from_email;
-	@Column
+	@Column(nullable = false)
 	private String to_email;
-	@Column
+	@Column(nullable = false)
 	private String subject_email;
-	@Column
+	@Column(nullable = false)
 	private String message_email;
 	@Column(name = "created_at")
 	private Date createdAt;
